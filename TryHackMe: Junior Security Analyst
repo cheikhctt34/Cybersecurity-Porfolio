@@ -1,97 +1,108 @@
 # TryHackMe: Junior Security Analyst
 
-## Lab Overview
-
-**Platform:** TryHackMe  
-**Category:** Security Operations / SOC  
-**Role:** Junior Security Analyst (SOC Level 1)
-
-### Introduction
-
-This lab introduces the responsibilities of a Junior Security Analyst working in a Security Operations Center (SOC). It simulates a typical workday, highlighting how security analysts monitor alerts, investigate suspicious activities, identify threats, and respond to potential security incidents.
-
-## 1. Security Analyst Journey
-
-A Junior Security Analyst serves as one of the first lines of defense against cyber threats. The role involves staying informed about emerging vulnerabilities, cyberattacks, and security incidents that could affect an organization.
-
-Daily responsibilities include:
-
-- Monitoring and investigating security alerts.
-- Participating in SOC team discussions and workshops.
-- Collaborating with other IT and security teams.
-- Learning about emerging cyber threats and defensive techniques.
-
-## 2. SOC Structure and Team Roles
-
-A Security Operations Center consists of different professionals working together to protect an organization's systems and information.
-
-| Role | Responsibilities |
+| Lab Information | Details |
 |---|---|
-| Junior Security Analyst (SOC Level 1) | Monitors alerts and performs initial investigations. |
-| Senior Analyst | Assists junior analysts and investigates complex security incidents. |
-| SOC Engineer | Maintains security tools and configures detection systems. |
-| SOC Manager | Oversees SOC operations and reports security performance to management. |
-| Incident Responder | Handles major security incidents and coordinates response activities. |
+| **Platform** | TryHackMe |
+| **Category** | Security Operations (SOC) |
+| **Role** | Junior Security Analyst – SOC Level 1 |
+| **Focus** | Security Monitoring, Threat Detection & Incident Response |
 
-## 3. Daily Security Analyst Activities
+---
 
-During a typical shift, a Junior Security Analyst may:
+## 1. Lab Overview
 
-- Investigate a data stealer infection on an employee's laptop.
-- Identify and respond to phishing campaigns targeting employees.
-- Assist with ransomware incident investigations.
-- Work with teammates to develop detection rules and automation.
-- Escalate suspicious activities to senior analysts when necessary.
+This lab introduces the daily responsibilities of a Junior Security Analyst working in a Security Operations Center (SOC).
+
+The exercise simulates a typical workday, covering security alert monitoring, suspicious activity investigation, threat identification, incident escalation, and firewall response.
+
+## 2. Security Operations Center (SOC) – Team Structure
+
+A SOC is made up of security professionals who work together to monitor, detect, investigate, and respond to cybersecurity threats.
+
+| Team Member / Role | Primary Responsibilities |
+|---|---|
+| **Junior Security Analyst (SOC Level 1)** | Monitors security alerts and performs initial investigations. |
+| **Senior Analyst** | Supports junior analysts and investigates complex security incidents. |
+| **SOC Engineer** | Maintains security tools and configures detection systems. |
+| **SOC Manager** | Oversees SOC operations and reports security performance to management. |
+| **Incident Responder** | Handles major security incidents and coordinates response activities. |
+
+## 3. Daily Responsibilities of a Junior Security Analyst
+
+| Activity | Description |
+|---|---|
+| Security Monitoring | Monitor SIEM dashboards and investigate incoming alerts. |
+| Threat Investigation | Analyze suspicious logins, IP addresses, and unusual activities. |
+| Incident Escalation | Forward significant security findings to senior analysts. |
+| Team Collaboration | Work with other SOC members and IT teams. |
+| Continuous Learning | Stay updated on emerging vulnerabilities, attacks, and defensive techniques. |
 
 ## 4. Hands-On Exercise: Security Alert Investigation
 
-The practical exercise simulates a Security Analyst investigating suspicious activity through a Security Information and Event Management (SIEM) dashboard.
+**Objective:** Investigate suspicious network activity using a simulated security monitoring environment.
 
-**Tools and interfaces explored:**
-- SIEM Dashboard
-- IP Hunter
-- Escalation
-- Firewall
+### Tools and Interfaces
 
-### Step 1: Review Security Alerts
+| Tool / Interface | Purpose |
+|---|---|
+| SIEM Dashboard | Monitor security alerts and identify suspicious activities. |
+| IP Hunter | Investigate suspicious IP addresses. |
+| Escalation | Escalate security findings to the appropriate team member. |
+| Firewall | Block malicious IP addresses to prevent further access. |
 
-Inspected the SIEM dashboard and reviewed alerts based on their severity.
+### Investigation Steps
 
-The dashboard contained several events, including:
-- Successful SSH login from a suspicious IP address.
-- Unauthorized login attempts targeting port 22 (SSH).
-- Multiple failed login attempts.
-- User login activity and service account authentication errors.
+| Step | Action | Findings / Results |
+|---|---|---|
+| **1. Review Alerts** | Inspected the SIEM dashboard and reviewed alerts by severity. | Identified multiple security events, including suspicious SSH activity. |
+| **2. Identify Threat** | Investigated critical alerts involving unauthorized login attempts. | Malicious IP identified: `221.181.185.159` |
+| **3. Investigate IP** | Copied the suspicious IP and switched to the IP Hunter interface. | Investigated the identified IP address. |
+| **4. Escalate Alert** | Used the escalation interface to report the suspicious activity. | Followed the incident escalation workflow. |
+| **5. Block IP** | Used the Firewall interface to block the malicious IP. | Reviewed the firewall confirmation message. |
 
-### Step 2: Identify the Malicious IP
+### Security Alerts Observed
 
-Reviewed the critical alerts and identified the suspicious IP address associated with unauthorized SSH login attempts and a subsequent successful login.
+| Severity | Security Event | Observation |
+|---|---|---|
+| <span>Critical</span> | Successful SSH login from `221.181.185.159` | Suspicious successful authentication. |
+| Critical | Unauthorized login attempts from `221.181.185.159` on port 22 | Potential unauthorized access attempt. |
+| Low | User login after three failed attempts | Authentication activity requiring monitoring. |
+| Medium | Multiple failed login attempts from IT Automation | Potential account authentication issue. |
+| Low | IT Automation password expired | Service account password expiration. |
 
-**Identified malicious IP:** `221.181.185.159`
+## 5. Key Technical Concepts
 
-### Step 3: Investigate and Escalate
+| Concept | What I Learned |
+|---|---|
+| **SIEM** | Centralizes security logs and alerts to help analysts detect suspicious activities. |
+| **SOC** | A dedicated team responsible for monitoring and responding to security threats. |
+| **SSH (Port 22)** | A protocol used for secure remote access to systems. |
+| **IP Investigation** | Examining suspicious IP addresses to identify potential threats. |
+| **Incident Escalation** | Reporting security incidents to personnel with the appropriate expertise. |
+| **Firewall** | Controls network traffic and can block suspicious or malicious connections. |
+| **Incident Response** | Identifying, investigating, containing, and responding to security incidents. |
 
-Used the IP Hunter interface to investigate the suspicious IP address and followed the escalation process to notify the appropriate security team member.
+## 6. Skills Developed
 
-### Step 4: Firewall Response
+| Technical Skills | Operational Skills |
+|---|---|
+| SIEM monitoring | Alert prioritization |
+| IP address investigation | Incident documentation |
+| SSH activity analysis | Security escalation |
+| Firewall threat blocking | SOC teamwork |
+| Threat detection | Security awareness |
 
-Used the Firewall interface to block the malicious IP address and reviewed the system confirmation message.
+## 7. Lab Completion Summary
 
-## 5. Key Skills Developed
+| Item | Result |
+|---|---|
+| Lab Status | Completed |
+| Platform | TryHackMe |
+| Practical Exercise | SIEM alert investigation |
+| Identified Malicious IP | `221.181.185.159` |
+| Defensive Action | Firewall blocking |
+| Main Learning Outcome | Understanding the daily workflow of a SOC Level 1 Analyst |
 
-- Security Operations Center (SOC) fundamentals.
-- SIEM dashboard monitoring.
-- Security alert investigation and prioritization.
-- Identification of suspicious IP addresses.
-- SSH security monitoring (Port 22).
-- Incident escalation procedures.
-- Firewall-based threat mitigation.
-- Understanding SOC team responsibilities.
+### Key Takeaway
 
-## 6. Lab Completion
-
-Completed the TryHackMe Junior Security Analyst Intro room, gaining practical exposure to the responsibilities of a SOC Level 1 Analyst.
-
-The exercise provided an introduction to security monitoring, alert investigation, threat identification, incident escalation, and firewall response procedures.
-
-**Key Takeaway:** A Junior Security Analyst must be able to identify suspicious activities, investigate security alerts, document findings, and escalate or respond to threats before they cause further damage.
+This exercise provided an introduction to the daily responsibilities of a Junior Security Analyst, demonstrating how security professionals monitor alerts, investigate suspicious network activity, escalate incidents, and apply defensive measures to protect organizational systems.
