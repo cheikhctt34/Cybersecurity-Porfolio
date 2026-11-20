@@ -1,0 +1,97 @@
+# TryHackMe: Junior Security Analyst
+
+## Lab Overview
+
+**Platform:** TryHackMe  
+**Category:** Security Operations / SOC  
+**Role:** Junior Security Analyst (SOC Level 1)
+
+### Introduction
+
+This lab introduces the responsibilities of a Junior Security Analyst working in a Security Operations Center (SOC). It simulates a typical workday, highlighting how security analysts monitor alerts, investigate suspicious activities, identify threats, and respond to potential security incidents.
+
+## 1. Security Analyst Journey
+
+A Junior Security Analyst serves as one of the first lines of defense against cyber threats. The role involves staying informed about emerging vulnerabilities, cyberattacks, and security incidents that could affect an organization.
+
+Daily responsibilities include:
+
+- Monitoring and investigating security alerts.
+- Participating in SOC team discussions and workshops.
+- Collaborating with other IT and security teams.
+- Learning about emerging cyber threats and defensive techniques.
+
+## 2. SOC Structure and Team Roles
+
+A Security Operations Center consists of different professionals working together to protect an organization's systems and information.
+
+| Role | Responsibilities |
+|---|---|
+| Junior Security Analyst (SOC Level 1) | Monitors alerts and performs initial investigations. |
+| Senior Analyst | Assists junior analysts and investigates complex security incidents. |
+| SOC Engineer | Maintains security tools and configures detection systems. |
+| SOC Manager | Oversees SOC operations and reports security performance to management. |
+| Incident Responder | Handles major security incidents and coordinates response activities. |
+
+## 3. Daily Security Analyst Activities
+
+During a typical shift, a Junior Security Analyst may:
+
+- Investigate a data stealer infection on an employee's laptop.
+- Identify and respond to phishing campaigns targeting employees.
+- Assist with ransomware incident investigations.
+- Work with teammates to develop detection rules and automation.
+- Escalate suspicious activities to senior analysts when necessary.
+
+## 4. Hands-On Exercise: Security Alert Investigation
+
+The practical exercise simulates a Security Analyst investigating suspicious activity through a Security Information and Event Management (SIEM) dashboard.
+
+**Tools and interfaces explored:**
+- SIEM Dashboard
+- IP Hunter
+- Escalation
+- Firewall
+
+### Step 1: Review Security Alerts
+
+Inspected the SIEM dashboard and reviewed alerts based on their severity.
+
+The dashboard contained several events, including:
+- Successful SSH login from a suspicious IP address.
+- Unauthorized login attempts targeting port 22 (SSH).
+- Multiple failed login attempts.
+- User login activity and service account authentication errors.
+
+### Step 2: Identify the Malicious IP
+
+Reviewed the critical alerts and identified the suspicious IP address associated with unauthorized SSH login attempts and a subsequent successful login.
+
+**Identified malicious IP:** `221.181.185.159`
+
+### Step 3: Investigate and Escalate
+
+Used the IP Hunter interface to investigate the suspicious IP address and followed the escalation process to notify the appropriate security team member.
+
+### Step 4: Firewall Response
+
+Used the Firewall interface to block the malicious IP address and reviewed the system confirmation message.
+
+## 5. Key Skills Developed
+
+- Security Operations Center (SOC) fundamentals.
+- SIEM dashboard monitoring.
+- Security alert investigation and prioritization.
+- Identification of suspicious IP addresses.
+- SSH security monitoring (Port 22).
+- Incident escalation procedures.
+- Firewall-based threat mitigation.
+- Understanding SOC team responsibilities.
+
+## 6. Lab Completion
+
+Completed the TryHackMe Junior Security Analyst Intro room, gaining practical exposure to the responsibilities of a SOC Level 1 Analyst.
+
+The exercise provided an introduction to security monitoring, alert investigation, threat identification, incident escalation, and firewall response procedures.
+
+**Key Takeaway:** A Junior Security Analyst must be able to identify suspicious activities, investigate security alerts, document findings, and escalate or respond to threats before they cause further damage.
