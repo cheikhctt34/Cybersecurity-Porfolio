@@ -1,124 +1,128 @@
-# TryHackMe: SOC Role in Blue Team
-## Security Operations Center (SOC) – Roles, Responsibilities & Incident Management
+# SOC Role in Blue Team
 
-### Professional Experience & Practical Security Training
+## TryHackMe | SOC Level 1
 
-**Training Platform:** TryHackMe  
-**Learning Path:** SOC Level 1  
-**Module:** Blue Team Introduction  
-**Lab:** SOC Role in Blue Team  
-**Focus Areas:** SOC Operations, Blue Team, Security Incident Management, Security Leadership, and Incident Response
+| Lab Detail | Information |
+|---|---|
+| **Training Platform** | TryHackMe |
+| **Learning Path** | SOC Level 1 |
+| **Module** | Blue Team Introduction |
+| **Lab** | SOC Role in Blue Team |
+| **Focus Areas** | SOC Operations, Blue Team, Incident Management, Security Leadership |
+| **Status** | **Completed** |
 
 ---
 
-## 1. Lab Overview
+## 1. Project Overview
 
-This lab explores how a Security Operations Center (SOC) operates within a corporate security structure and how different cybersecurity teams collaborate to protect an organization's infrastructure.
+This lab examined how a Security Operations Center (SOC) operates within a corporate cybersecurity structure. It explored the responsibilities of security teams, the analyst escalation process, and the coordination required to investigate and respond to multiple security incidents.
 
-The exercises focus on understanding SOC analyst responsibilities, security department structures, incident escalation, and the relationship between internal security teams and Managed Security Service Providers (MSSPs).
-
-The practical challenge simulates a multinational organization's security environment, requiring the selection of appropriate cybersecurity specialists to investigate and respond to multiple simultaneous security incidents.
+The exercises also demonstrated the differences between defensive operations, offensive security, governance activities, internal SOC teams, and outsourced Managed Security Service Providers (MSSPs).
 
 ## 2. Learning Objectives
 
 - Understand the purpose and responsibilities of a Blue Team.
-- Identify the organizational structure of a corporate cybersecurity department.
-- Understand the responsibilities of SOC Level 1, Level 2, and senior security professionals.
-- Differentiate between Red Team, Blue Team, and Governance, Risk & Compliance (GRC).
-- Understand internal SOC operations versus outsourced MSSP services.
-- Identify appropriate security specialists for different incident scenarios.
+- Identify the structure of a corporate cybersecurity department.
+- Understand the responsibilities of SOC Level 1, Level 2, and Level 3 analysts.
+- Differentiate between Red Team, Blue Team, and Governance, Risk & Compliance (GRC) operations.
+- Compare internal SOC operations with outsourced MSSP services.
+- Recognize appropriate specialists for different incident scenarios.
 - Understand incident escalation and cross-team collaboration.
 
-## 3. Corporate Security Operations Structure
+## 3. Corporate Security Structure
 
-A mature cybersecurity organization typically operates through several specialized teams under the leadership of a Chief Information Security Officer (CISO).
+A mature cybersecurity organization is typically led by the **Chief Information Security Officer (CISO)** and contains several specialized teams.
 
 | Role / Department | Primary Responsibilities |
 |---|---|
-| CEO | Oversees business objectives and organizational direction. |
-| CISO | Establishes cybersecurity strategy, policies, and risk management priorities. |
-| SOC Manager | Oversees security operations, analysts, incident handling, and team performance. |
-| SOC Level 1 Analyst | Monitors alerts, performs initial investigations, validates suspicious activity, and escalates incidents. |
-| SOC Level 2 Analyst | Conducts deeper investigations, correlates security events, and supports incident containment. |
-| SOC Level 3 Analyst | Handles advanced threat investigations, complex incidents, and threat hunting. |
-| Incident Response Team | Coordinates containment, eradication, and recovery during security incidents. |
-| Red Team | Simulates attacks to identify weaknesses in organizational defenses. |
-| Blue Team | Defends systems, monitors threats, and responds to security incidents. |
-| GRC Team | Manages security policies, regulatory compliance, audits, and organizational risk. |
+| **Chief Executive Officer (CEO)** | Oversees business objectives and organizational direction. |
+| **Chief Information Security Officer (CISO)** | Defines cybersecurity strategy, policies, risk priorities, and organizational security governance. |
+| **SOC Manager** | Oversees SOC operations, analyst performance, alert handling, and incident processes. |
+| **SOC Level 1 Analyst** | Monitors alerts, performs initial investigations, validates suspicious activity, and escalates incidents. |
+| **SOC Level 2 Analyst** | Conducts deeper investigations, correlates security events, and supports containment. |
+| **SOC Level 3 Analyst** | Handles advanced threat investigations, complex incidents, and threat hunting. |
+| **Incident Response Team** | Coordinates containment, eradication, recovery, and post-incident activities. |
+| **Red Team** | Performs authorized attack simulations to identify defensive weaknesses. |
+| **Blue Team** | Monitors, defends, and responds to threats across organizational systems. |
+| **GRC Team** | Manages policies, risk assessments, audits, regulatory compliance, and governance. |
 
-## 4. Practical SOC Responsibilities
+## 4. SOC Analyst Responsibilities
 
-The following activities represent common responsibilities performed in real-world SOC environments.
+SOC analyst duties progress from alert validation and documentation to advanced investigation and threat hunting.
 
-| SOC Activity | Practical Responsibility |
+| SOC Responsibility | Practical Application |
 |---|---|
-| Security Monitoring | Monitor SIEM dashboards and investigate incoming security alerts. |
-| Alert Triage | Determine whether an alert is legitimate, suspicious, or a false positive. |
-| Log Analysis | Examine authentication, endpoint, firewall, and network logs. |
-| Threat Detection | Identify indicators of compromise and unusual system activity. |
-| Incident Escalation | Forward confirmed or complex incidents to higher-level analysts. |
-| Incident Response | Coordinate containment and remediation activities. |
-| Documentation | Record investigation findings, timestamps, evidence, and recommended actions. |
+| **Security Monitoring** | Monitor SIEM dashboards and investigate incoming security alerts. |
+| **Alert Triage** | Determine whether an alert is benign, suspicious, or a false positive. |
+| **Log Analysis** | Examine authentication, endpoint, firewall, DNS, and network activity. |
+| **Threat Detection** | Identify unusual activity and indicators of compromise. |
+| **Incident Escalation** | Transfer confirmed or complex incidents to appropriately qualified analysts. |
+| **Incident Response** | Support containment, remediation, recovery, and evidence-preservation activities. |
+| **Documentation** | Record findings, timestamps, evidence, affected systems, and recommended actions. |
 
-## 5. Internal SOC vs. Managed Security Service Provider (MSSP)
+### 4.1 Analyst Levels
 
-Organizations may operate their own security operations center or outsource security monitoring to a third-party provider.
+| Level | Typical Responsibilities |
+|---|---|
+| **Level 1** | Perform monitoring, initial investigation, alert validation, and standard escalation. |
+| **Level 2** | Investigate confirmed threats, correlate multiple events, and support containment. |
+| **Level 3** | Lead complex investigations, perform threat hunting, and analyze advanced threats. |
+
+## 5. Internal SOC vs. MSSP
+
+Organizations may operate a dedicated internal SOC or obtain monitoring and incident support from an external Managed Security Service Provider (MSSP).
 
 | Category | Internal SOC | MSSP |
 |---|---|---|
-| Operations | Protects one organization. | Provides security services to multiple clients. |
-| Monitoring | Focuses on internal infrastructure. | Monitors different customer environments. |
-| Tools | Primarily uses company-selected security platforms. | May work with multiple SIEM and security platforms. |
-| Incident Handling | Follows internal response procedures. | Follows contractual and customer-specific procedures. |
-| Responsibilities | Directly supports internal security objectives. | Provides outsourced monitoring, detection, and response services. |
+| **Operational Scope** | Protects a single organization. | Provides security services to multiple clients. |
+| **Primary Focus** | Monitors internal systems and organizational infrastructure. | Monitors and manages multiple customer environments. |
+| **Security Tools** | Uses company-selected platforms and configurations. | Works across different SIEM and security platforms. |
+| **Incident Handling** | Follows internal policies and response procedures. | Follows contractual agreements and customer-specific procedures. |
+| **Organization Alignment** | Directly supports internal security and business objectives. | Provides outsourced monitoring, detection, and response support. |
 
-## 6. Practical Scenario: Enterprise Security Incident Management
+## 6. Enterprise Incident Management Scenario
 
-**Scenario:**
+> A multinational organization experienced seven simultaneous security incidents. Acting in the role of a CISO, the objective was to assign each incident to the appropriate cybersecurity specialist.
 
-A multinational organization is experiencing seven simultaneous security incidents. Acting as the CISO, the objective is to assign the appropriate cybersecurity specialists to investigate and manage each incident.
+This scenario demonstrated the importance of incident classification, clearly defined responsibilities, and effective communication between security teams.
 
-The challenge demonstrates why organizations need specialized security teams and clearly defined responsibilities.
+### 6.1 Investigation and Response Workflow
 
-### Investigation and Response Workflow
+| Step | Action |
+|---|---|
+| **1. Identify** | Determine the nature and potential impact of each incident. |
+| **2. Classify** | Identify the required technical or governance expertise. |
+| **3. Assign** | Allocate the incident to the responsible team or specialist. |
+| **4. Escalate** | Refer advanced or complex incidents to experienced analysts or responders. |
+| **5. Coordinate** | Facilitate communication across SOC, IT, incident response, and GRC teams. |
+| **6. Document** | Record actions, evidence, findings, and recommended follow-up steps. |
 
-1. Identify the nature of each reported security incident.
-2. Determine which security department has the appropriate expertise.
-3. Assign the incident to the responsible security specialist.
-4. Escalate incidents requiring advanced investigation or management.
-5. Coordinate response activities across security departments.
-6. Ensure incidents are properly investigated and documented.
+### 6.2 Key Operational Takeaways
 
-### Key Operational Takeaways
-
-- Not every security incident should be handled by the same team.
-- SOC analysts are often the first point of contact for security alerts.
-- Complex incidents require escalation to experienced analysts and incident responders.
-- Red Teams and Blue Teams have different but complementary responsibilities.
-- GRC ensures that security operations align with organizational policies and compliance requirements.
-- Effective communication between security departments is essential during simultaneous incidents.
+- Security incidents require handling based on their nature and impact, not all through the same team.
+- SOC analysts are commonly the first operational point of contact for alerts.
+- Complex incidents require escalation to experienced analysts or dedicated responders.
+- Red Teams and Blue Teams have complementary but distinct responsibilities.
+- GRC activities ensure that security operations align with policies and regulatory requirements.
+- Clear communication is essential when several incidents occur simultaneously.
 
 ## 7. Skills Demonstrated
 
-| Technical / Professional Skill | Application |
+| Technical or Professional Skill | Application |
 |---|---|
-| SOC Operations | Understanding security monitoring and analyst responsibilities. |
-| Incident Classification | Identifying the appropriate team for different security incidents. |
-| Security Team Coordination | Understanding how specialized teams collaborate. |
-| Incident Escalation | Recognizing when an issue requires advanced investigation. |
-| Security Governance | Understanding CISO responsibilities and GRC functions. |
-| Analytical Thinking | Evaluating incident scenarios and determining appropriate responses. |
-| Security Documentation | Recording investigation procedures and operational findings. |
+| **SOC Operations** | Understanding security monitoring and analyst workflows. |
+| **Incident Classification** | Identifying the team or specialist appropriate for an incident. |
+| **Security Team Coordination** | Understanding how specialized teams collaborate during incidents. |
+| **Incident Escalation** | Recognizing when additional expertise or management involvement is required. |
+| **Security Governance** | Understanding CISO responsibilities and GRC functions. |
+| **Analytical Thinking** | Evaluating security scenarios and selecting appropriate responses. |
+| **Security Documentation** | Recording investigation procedures, findings, and operational actions. |
 
 ## 8. Professional Relevance
 
-The concepts covered in this lab are directly applicable to enterprise IT and cybersecurity environments.
+The concepts covered in this lab apply directly to enterprise IT and cybersecurity environments. Effective security operations depend on collaboration between IT support, infrastructure teams, external providers, and incident response personnel.
 
-In a corporate environment, security operations depend on collaboration between IT support, infrastructure teams, external security providers, and dedicated incident response personnel.
-
-Understanding these responsibilities helps bridge the gap between traditional IT support and professional cybersecurity operations.
-
-This knowledge is particularly relevant when transitioning into roles such as:
+Understanding these responsibilities provides a foundation for roles such as:
 
 - Junior SOC Analyst
 - Security Operations Analyst
@@ -128,12 +132,13 @@ This knowledge is particularly relevant when transitioning into roles such as:
 
 ## 9. Lab Completion
 
-**Status:** Completed
-
-**Training Environment:** TryHackMe – Controlled Cybersecurity Learning Platform
-
-**Documentation Note:** This repository documents the concepts, operational workflows, and professional skills developed through the training exercises. Challenge-specific flags, answers, and restricted platform content are intentionally excluded.
+| Completion Detail | Information |
+|---|---|
+| **Status** | Completed |
+| **Training Environment** | TryHackMe — controlled cybersecurity learning platform |
+| **Documentation Scope** | Security concepts, operational workflows, team responsibilities, and professional skills |
+| **Restricted Content** | Challenge-specific answers and restricted platform content are excluded |
 
 ---
 
-*This project represents hands-on cybersecurity training and simulated enterprise security scenarios. It is intended to demonstrate practical learning, security operations knowledge, and familiarity with real-world SOC responsibilities.*
+*This project documents hands-on cybersecurity training and simulated enterprise security scenarios. It is intended to demonstrate practical learning, security operations knowledge, and familiarity with incident-management responsibilities.*
