@@ -1,0 +1,90 @@
+Course Information
+Course: SOC Level 1
+Provider: TryHackMe
+Learning Path: SOC Level 1
+Module: Blue Team Introduction
+Lab: SOC Role in Blue Team
+Status: Completed
+Overview
+This lab introduced the role of a Security Operations Center (SOC) and how cybersecurity teams work together to protect organizational assets.
+
+The exercise focused on SOC responsibilities, analyst roles, incident escalation, team collaboration, and enterprise security operations.
+
+Learning Objectives
+Understand the purpose and responsibilities of the Blue Team.
+Explore the structure of a cybersecurity department.
+Identify the responsibilities of SOC Level 1, Level 2, and Level 3 analysts.
+Understand the roles of Red Team, Blue Team, and GRC teams.
+Differentiate between internal SOC operations and MSSPs.
+Understand incident management and escalation procedures.
+Lab Environment
+Operating System: Windows 11
+Browser: Mozilla Firefox
+Training Platform: TryHackMe
+Learning Path: SOC Level 1
+Module: Blue Team Introduction
+Exercise Type: Interactive Enterprise Security Scenario
+SOC Roles and Responsibilities
+Role	Responsibility
+SOC Level 1 Analyst	Monitor alerts, perform initial investigations, and escalate suspicious activity.
+SOC Level 2 Analyst	Conduct deeper investigations and analyze security events.
+SOC Level 3 Analyst	Handle advanced threats and complex incidents.
+SOC Manager	Manage SOC operations and analyst activities.
+CISO	Define cybersecurity strategy and security policies.
+Red Team	Simulate attacks to identify weaknesses.
+Blue Team	Monitor, detect, and respond to threats.
+GRC Team	Manage governance, risk, and compliance activities.
+Incident Response Team	Coordinate containment, eradication, and recovery efforts.
+Practical Exercises
+Cybersecurity Department Structure
+Examined the organizational hierarchy of a security department.
+Identified responsibilities across SOC analyst levels.
+Compared internal SOC teams with MSSPs.
+Reviewed incident assignment procedures.
+Evaluated multiple simultaneous security incidents.
+Enterprise Incident Management Scenario
+A simulated multinational organization experienced multiple security incidents at the same time.
+
+Acting as a CISO, the objective was to assign incidents to the appropriate security teams and specialists.
+
+Key concepts demonstrated:
+
+Incident classification
+Incident prioritization
+Escalation procedures
+Team coordination
+Enterprise security operations
+Key Cybersecurity Concepts
+Security Operations Center (SOC)
+Security Monitoring
+Alert Triage
+Blue Team Operations
+Red Team Operations
+Governance, Risk, and Compliance (GRC)
+Managed Security Service Provider (MSSP)
+Incident Classification
+Incident Escalation
+Incident Response
+Enterprise Security Management
+Key Learning Outcomes
+Learned how SOC teams operate within an enterprise environment.
+Identified responsibilities of different security roles.
+Understood security incident classification and escalation processes.
+Explored collaboration between Blue Team, Red Team, GRC, and Incident Response teams.
+Gained insight into SOC analyst career progression.
+Security Significance
+Effective cybersecurity operations require clear responsibilities, strong communication, and structured escalation procedures.
+
+SOC analysts help organizations:
+
+Monitor security events.
+Investigate suspicious activity.
+Escalate threats appropriately.
+Support incident response efforts.
+Evidence
+Screenshots and supporting documentation will be added separately.
+
+Note: Challenge answers, flags, and restricted platform content are intentionally excluded from this public portfolio.
+
+Authorization
+This lab was completed through TryHackMe in an authorized training environment designed for cybersecurity education and defensive security practice.
